@@ -1,0 +1,71 @@
+<div class="maindiv">
+  <!-- Side Bar -->
+  <div class="sidebar" [hidden]="sidebarStatus">
+    <header>SideBar</header>
+    <ul>
+      <li><a href="">Dashboard</a></li>
+      <li><a href="">Shortcuts</a></li>
+      <li><a href="">Overview</a></li>
+      <li><a href="">Events</a></li>
+      <li><a href="">Profile</a></li>
+      <li><a href="">Status</a></li>
+    </ul>
+  </div>
+  <!-- Navbar + Content -->
+  <div class="navcontent">
+    <!-- Responsive Navbar -->
+    <div class="heading">
+      <div>
+        <button class="togglebutton" (click)="clickEventSidebar()">
+          Toggle Menu
+        </button>
+      </div>
+      <div class="menu">
+        <div class="option" (click)="clickEvent()">Menu</div>
+        <div [hidden]="status">
+          <nav class="nav-bar">
+            <div class="textSection">
+              <ul>
+                <li>
+                  <a href="" class="">Home</a>
+                </li>
+                <li>
+                  <a href="" class="">Features</a>
+                </li>
+                <li>
+                  <a href="" class="">Pricing</a>
+                </li>
+                <li>
+                  <a href="" class="">About</a>
+                </li>
+                <li>
+                  <a href="" class="">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="formSection">
+              <form>
+                <input type="text" placeholder="Search" />
+                <button type="button">Search</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Body Content -->
+    <div class="content">
+      <h1 class="">Angular 11 Bootstrap 5 Simple Sidebar Template</h1>
+      <p>
+        The starting state of the menu will appear collapsed on smaller screens,
+        and will appear non-collapsed on larger screens. When toggled using the
+        button below, the menu will change.
+      </p>
+      <p>
+        Make sure to keep all page content within the
+        <code>#page-content-wrapper</code>. The top navbar is optional, and just
+        for demonstration.
+      </p>
+    </div>
+  </div>
+</div>

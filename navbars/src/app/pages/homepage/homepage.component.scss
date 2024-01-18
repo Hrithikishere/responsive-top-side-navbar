@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Calibri, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #fefefe;
+}
+
+.maindiv{
+
+    display: flex;
+}
+
+.sidebar{
+
+    height: 100vh;
+    left: 0;
+    background: rgba(224, 224, 224, 0.486);
+    width: 15%;
+}
+
+.sidebar header{
+
+    margin-top: 10px;
+    margin-bottom: 7px;
+
+    font-size: 22px;
+    text-align: start;
+    padding: 10px 15px;
+
+}
+
+.sidebar ul a{
+    
+    display: block;
+    padding: 12px 15px;
+    border-bottom: 1px solid grey;
+    text-align: start;
+    color: black;
+
+}
+
+.option{
+
+
+    display: none;
+}
+
+
+.nav-bar{
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar ul{
+
+    display: flex;
+}
+
+.nav-bar ul li a{
+
+    color: rgba(0, 0, 0, 0.767);
+    font-size: 20;
+    padding: 10px 20px;
+}
+
+.heading{
+
+    width: 100%;
+    height: 70px;
+    background-color: rgba(224, 224, 224, 0.486);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.togglebutton{
+    
+    color: white;
+    padding: 8px 10px;
+    border: 1px solid ;
+    border-radius: 4px;
+    background-color: dodgerblue;
+    width: 120px;
+
+}
+
+.formSection input{
+
+    outline: none;
+    padding: 4px 10px;
+    border: 1px solid #575757a6;
+    border-radius: 4px;
+    margin-right: 5px;
+
+}
+
+.formSection button{
+
+    color: green;
+    outline: none;
+    padding: 4px 10px;
+    border: 1px solid green;
+    border-radius: 4px;
+    margin-right: 5px;
+    background-color: transparent;
+
+}
+
+.navcontent{
+
+    flex: 1;
+    display: inline;
+}
+
+.content{
+
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+
+    // .nav-bar{
+
+    //     display: inline-flex;
+
+    // }
+
+}
+
+@media (max-width: 767px) {
+
+    .maindiv{
+
+        display: flex;
+    }
+
+    .sidebar{
+
+        width: 25%;
+    }
+    
+    .heading{
+
+        display: flex;
+        // padding: 0px 30px;
+        justify-content: space-between;
+    }
+    .option{
+        display: inline;
+        
+        // cursor: pointer;
+        // width: 30px;
+        // height: 3px;
+        // margin: 6px 0;
+        // background: black;
+    }
+    .nav-bar{
+
+        // flex: 1;
+        height: 330px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: rgb(212, 212, 212);
+        // transition: 0.2s;
+        display: block;
+    }
+    .nav-bar ul{
+
+        display: inline;
+        margin: 80px auto 0 auto;
+        align-items: center;
+
+    }
+
+    .nav-bar .textSection{
+
+        align-items: center;
+    }
+
+    .nav-bar ul li{
+
+        margin: 20px auto 20px auto;
+        text-align: center;
+    }
+
+    .nav-bar .formSection{
+        
+        text-align: center;
+    }
+
+    .nav-bar .formSection input{
+
+        margin-top: 5px;
+    }
+
+    .nav-bar .formSection button{
+
+        text-align: center;
+        margin-top: 5px;
+
+    }
+}
